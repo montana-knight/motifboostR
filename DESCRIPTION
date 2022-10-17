@@ -5,8 +5,7 @@ Authors@R:
     person("Montana", "Knight", , "mknight@ncsu.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-5229-4122"))
 Description: Welcome to motifboostR. This package utilizes the XGBoost machine learning algorithm to link motifs to a corresponding gene expression pattern. Information on motif composition in each regulatory region is then extracted and used to prioritize regulatory regions as candidate promoters associated with that gene expression pattern.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
