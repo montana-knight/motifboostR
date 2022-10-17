@@ -99,7 +99,7 @@ tune_xgb_parameters <- function(training_prop, parameters, nrounds, motif_counts
 
       toydataset_xgboostmodel <- xgboost::xgboost(data=trainingset2, early_stopping_rounds = 25, verbose = 0, nrounds = nrounds, objective = "binary:logistic", params = all_parameters_tested[[i]]) # , objective = "binary:logistic"
 
-      pred <- predict(toydataset_xgboostmodel, validationset2)
+      pred <- stats::predict(toydataset_xgboostmodel, validationset2)
       pred2 <- round(pred)
 
       genes_and_pred <- cbind(row.names(validationset),pred2)
